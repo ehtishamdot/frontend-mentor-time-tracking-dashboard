@@ -31,7 +31,7 @@ async function loadJson() {
     json = await jsonObject.json();
     buildHtmlFromJson();
 }
-// loadJson();
+loadJson();
 
 function buildHtmlFromJson() {
     const selectedTimeFrame = document.getElementsByClassName("selected-time-frame")[0].id;
