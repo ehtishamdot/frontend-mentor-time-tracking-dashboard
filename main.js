@@ -35,12 +35,10 @@ async function loadJson() {
 
 function buildHtmlFromJson() {
     const selectedTimeFrame = document.getElementsByClassName("selected-time-frame")[0].id;
-    console.log(selectedTimeFrame);
 
     const main = document.getElementById("main");
 
     for (let i = 0; i < json.length; i++) {
-        console.log(json[i]);
 
         const section = document.createElement("section");
         section.className = "stat-tile";
@@ -94,7 +92,6 @@ function buildHtmlFromJson() {
 let sections;
 function redraw() {
     const selectedTimeFrame = document.getElementsByClassName("selected-time-frame")[0].id;
-    console.log(selectedTimeFrame);
 
     if(!sections) {
         sections = document.getElementsByClassName("stat-tile");

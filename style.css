@@ -118,6 +118,11 @@ span {
     width: 5em;
 }
 
+.timeframe:hover {
+    cursor: pointer;
+    color: white;
+}
+
 #daily {
     text-align: left;
 }
@@ -153,6 +158,11 @@ span {
     border-radius: var(--tile-border-radius);
 }
 
+.stat-content:hover {
+    background-color: var(--desaturated-blue);
+    cursor: pointer;
+}
+
 .tile-header {
     display: flex;
     justify-content: space-between;
@@ -169,6 +179,12 @@ span {
     display: inline-block;
     border: none;
     background: none;
+    z-index: 100;
+}
+
+.btn-more:hover {
+    color: white;
+    cursor: pointer;
 }
 
 .tile-main {
